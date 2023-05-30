@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600&display=swap");
+
+@import "variables";
+
+// // FONTS
+
+// font family
+.ff-bai {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+// font weight
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+// // COLORS
+
+// primary colors
+.strong-cyan {
+  color: $strongCyan !important;
+}
+
+.light-blue {
+  color: $lightBlue !important;
+}
+
+// neutral colors
+.dark-grayish-blue {
+  color: $darkGrayishBlue !important;
+}
+
+.grayish-blue {
+  color: $grayishBlue !important;
+}
+
+// // BACKGROUND COLORS
+
+// primary colors
+.bg-strong-cyan {
+  background-color: $strongCyan !important;
+}
+
+.bg-light-blue {
+  background-color: $lightBlue !important;
+}
+
+// neutral colors
+.bg-dark-grayish-blue {
+  background-color: $darkGrayishBlue !important;
+}
+
+.bg-grayish-blue {
+  background-color: $grayishBlue !important;
+}
