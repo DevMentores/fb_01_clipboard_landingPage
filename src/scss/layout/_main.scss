@@ -1,0 +1,55 @@
+//Font size resposive
+.fs-dskt{
+
+  --min: 1rem;
+  --max: 3rem;
+  --vw: 2vw;
+
+  h1, h2, p{
+    font-size: clamp(var(--min), var(--vw), var(--max));
+  }
+
+  h1 {
+    --min: 3rem;
+    --vw: 3vw;
+  }
+
+  h2 {
+    --min: 2.3rem;
+  }
+
+  p {
+    --max: 1.25rem;
+  }
+
+}
+
+
+.snippets-section {
+	width: 100%;
+
+	.two-cols {
+		width: 100% !important;
+	}
+	@media (min-width: 48rem) {
+		
+		.two-cols {
+			margin-top: 5rem;
+		}
+		.two-cols > figure {
+			max-width: 100%;
+			padding: 0;
+		}
+
+		.two-cols > article {
+			margin-block: auto;
+			max-width: 24rem;
+			gap: 4.5rem !important;
+		}
+
+		.two-cols > figure > img {
+			width: 60rem;
+			margin-left: -4rem;
+		}
+	}
+}
