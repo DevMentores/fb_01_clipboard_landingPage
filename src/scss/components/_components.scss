@@ -2,25 +2,45 @@
 .drop-shadow-blue,
 .drop-shadow-cyan {
 	position: relative;
-}
 
-.drop-shadow-cyan::before,
-.drop-shadow-blue::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	top: 2px;
-	left: 0;
-	border-radius: 100rem;
-	z-index: -2;
-	--color: #ffffff;
-	box-shadow: 0 0 0 2px var(--color);
-	background-color: var(--color);
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 2px;
+		left: 0;
+		border-radius: 100rem;
+		z-index: -2;
+		--color: #ffffff;
+		box-shadow: 0 0 0 2px var(--color);
+		background-color: var(--color);
+	}
+
+	&::after{
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 100rem;
+		background-color: rgba(255, 255, 255, 0);
+		transition: background-color 0.3s ease;
+	}
 
 	&:hover {
+		scale: 1.02;
+	}
+
+	&:hover::before {
 		top: 0;
 	}
+
+	&:hover::after {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+
 }
 
 .drop-shadow-cyan::before {
@@ -41,9 +61,26 @@
 }
 
 
-//Button Sizes
+//Button Size
 .btn-size{
 	margin: auto;
-	width: 90%;
-	height: 2.7em;
+	width: 15em;
+	height: 3em;
+
+	@media (min-width: 768px) {
+		margin: 0;
+	}
 }
+
+//PX icons
+
+.px-md-10{
+	padding-left: 10em !important;
+	padding-right: 10em !important;
+}
+
+
+
+
+
+
