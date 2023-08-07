@@ -25,6 +25,8 @@
 }
 
 
+//Snippets section
+
 .snippets-section {
 	width: 100%;
 
@@ -52,4 +54,15 @@
 			margin-left: -4rem;
 		}
 	}
+}
+
+
+//Supercharge section 
+
+@media (min-width: 48rem) {
+
+	.parrafo{
+		height: 8rem;
+	}
+
 }
