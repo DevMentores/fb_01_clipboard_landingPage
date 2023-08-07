@@ -1,11 +1,11 @@
 .bg-image {
-  background-image: url(../../assets/bg-header-mobile.png);
+  background-image: url(https://res.cloudinary.com/dciovdqaf/image/upload/v1691443297/bg-header-mobile_qiefaf.png);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
 
   @media (min-width: 500px) {
-    background-image: url(../../assets/bg-header-desktop.png);
+    background-image: url(https://res.cloudinary.com/dciovdqaf/image/upload/v1691443298/bg-header-desktop_l7vchg.png);
   }
 }
 
